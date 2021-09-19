@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    font-family: 'Red Hat Display', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+ max-width: 28.125rem;
+ border-radius: 1.25rem;
+ background-color: white;
+ text-align: center;
+}
+.card_img img{
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+.card_header {
+    margin: 2rem 0 1rem 0;
+    color: var(--dark-blue);
+}
+.card_header h1 {
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 3rem;
+}
+.card_subheader {
+    color: #7280a7;
+    margin: 1rem 3rem;
+    line-height: 1.6rem;
+}
+.card-price {
+    background-color: #f5f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem;
+    margin: 1rem 3rem 2rem 3rem;
+    border-radius: 10px;
+}
+.price {
+    color: #a0a4b6;
+}
+.plan {
+    font-weight: 800;
+    color: #1f2f56;
+}
+.change {
+    font-weight: 900;
+    font-size: 0.95rem;
+    padding-left: 3.8rem;
+}
+.card-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.payment {
+    font-weight: 700;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 20px 20px #c9c5f7;
+    cursor: pointer;
+}
+.cancel { 
+    font-size: 0.95rem;
+    font-weight: 900;
+    border: none;
+    color: #7280a7;
+    background-color: transparent;
+    margin: 1rem 0 2.8rem 0;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container, .card_img img {
+        max-width: 20rem;
+    } 
+    .card_subheader {
+        margin: 0;
+    }
+    .card-price{
+        padding: 0.5rem;
+        margin: 1rem 0.4rem 2rem 0.4rem;
+    }
+    .change {
+        padding: 0;
+    }
+    .inner-text {
+        padding-right: 3rem;
+    }
+}
